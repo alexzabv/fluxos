@@ -9,12 +9,6 @@ const llm = new ChatOpenAI({
   model: "gpt-4o-mini",
 });
 
-const solanaAgent = new SolanaAgentKit(
-  process.env.SOLANA_PRIVATE_KEY!,
-  process.env.RPC_URL,
-  process.env.OPENAI_API_KEY!,
-);
-
 const tools = createSolanaTools(solanaAgent);
 const memory = new MemorySaver();
 
@@ -32,6 +26,12 @@ const agent = createReactAgent({
       concise and helpful with your responses. Refrain from restating your tools' descriptions unless it is explicitly requested.
     `,
 });
+
+const solanaAgent = new SolanaAgentKit(
+  process.env.SOLANA_PRIVATE_KEY!,
+  process.env.RPC_URL,
+  process.env.OPENAI_API_KEY!,
+);
 
 export async function POST(req: NextRequest) {
   try {
