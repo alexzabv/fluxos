@@ -451,10 +451,6 @@ console.log(result3);
   }
 */
 
-const result4 = await executor.call({
-  input: "How long ago did he nominate her?"
-});
-
 /*
   {
     output: 'President Biden nominated Ketanji Brown Jackson four days before the most recent state of the union address.',
