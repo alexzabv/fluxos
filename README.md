@@ -2,7 +2,7 @@
 <img width="auto" height="auto" src="https://github.com/user-attachments/assets/b3905ff2-db2f-44d5-ae57-669544f88ff4">
 </p>
 
-## Solana Rug Checker  
+## [fluxos.app](fluxos.app)
 
 `FluxOS` is a TypeScript-based tool designed to monitor new token creation events within the **Raydium** decentralized exchange ecosystem on the **Solana blockchain**. It also evaluates the rug pull risk of these tokens.  
 
