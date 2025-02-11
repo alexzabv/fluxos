@@ -23,8 +23,10 @@ const markedOptions: MarkedOptions = {
 
 marked.setOptions(markedOptions);
 
-// Basic markdown to HTML conversion with sanitization
 export default function markdownToHtml(markdown: string) {
   const rawHtml = marked.parse(markdown);
   return DOMPurify.sanitize(rawHtml as string);
 }
+
+
+// Basic markdown to HTML conversion with sanitization
